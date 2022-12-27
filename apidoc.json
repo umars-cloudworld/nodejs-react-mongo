@@ -1,0 +1,7 @@
+{
+    "name": "Distortion API Documentation",
+    "version": "1.0.0",
+    "description": "Distortion API Documentation",
+    "sampleUrl": "http://localhost:3000/",
+    "order": ["post-verify", "get-resend"]
+}
