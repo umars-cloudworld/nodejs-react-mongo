@@ -3,4 +3,5 @@ cd /home/ec2-user/nodejs-react-mongo
 sudo chmod -R 777 /home/ec2-user/nodejs-react-mongo
 npm install
 npm run build
-pm2 reload 0
+sudo npm install pm2 -g
+pm2 start "node dist/index.js"
