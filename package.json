@@ -15,17 +15,6 @@
         "predocs": "rm -rf src/docs",
         "docs": "apidoc -f \".*\\.ts$\" -i src/routes -o src/docs"
     },
-    "scripts": {
-        "up": "docker-compose up -d",
-        "postup": "npm run start",
-        "down": "docker-compose down",
-        "start": "set TS_NODE_FILES=true && nodemon src/index.ts",
-        "prebuild": "rd /S /q dist",
-        "build": "npx tsc -p .",
-        "lint": "eslint src --ext .ts --fix",
-        "predocs": "rd /S /q \"src/docs\"",
-        "docs": "apidoc -f \".*\\.ts$\" -i src/routes -o src/docs"
-    },
     "keywords": [],
     "author": "nathandev",
     "license": "ISC",
