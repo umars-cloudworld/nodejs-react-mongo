@@ -1,5 +1,5 @@
 #!/bin/bash
-# npm install
+npm install
 # npm run build
 
 DIR="/home/ec2-user/nodejs-react-mongo"
