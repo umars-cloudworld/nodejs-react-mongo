@@ -8,6 +8,17 @@
         "up": "docker-compose up -d",
         "postup": "npm run start",
         "down": "docker-compose down",
+        "start": "TS_NODE_FILES=true nodemon src/index.ts",
+        "prebuild": "rm -rf dist",
+        "build": "tsc -p .",
+        "lint": "eslint src --ext .ts --fix",
+        "predocs": "rm -rf src/docs",
+        "docs": "apidoc -f \".*\\.ts$\" -i src/routes -o src/docs"
+    },
+    "scripts": {
+        "up": "docker-compose up -d",
+        "postup": "npm run start",
+        "down": "docker-compose down",
         "start": "set TS_NODE_FILES=true && nodemon src/index.ts",
         "prebuild": "rd /S /q dist",
         "build": "npx tsc -p .",
