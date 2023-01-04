@@ -1,12 +1,9 @@
 #!/bin/bash
+cd /home/ec2-user/nodejs-github-codebuild-codepipeline
 npm install
-
-# # npm run build
-
-# DIR="/home/ec2-user/nodejs-react-mongo"
-# if [ -d "$DIR" ]; then
-#     echo "$DIR exists" 
-# else
-#     echo "Creating $DIR directory"
-#     mkdir $DIR
-# fi
+# echo 'run after_install.sh: ' >> /home/ec2-user/nodejs-aws-codedeploy-pipeline/deploy.log
+# echo 'cd /home/ec2-user/nodejs-server-cicd' >> /home/ec2-user/nodejs-aws-codedeploy-pipeline/deploy.log
+# echo 'cd /home/ec2-user/nodejs-server-cicd' >> /home/ec2-user/nodejs-aws-codedeploy-pipeline/deploy.log
+# cd /home/ec2-user/nodejs-aws-codedeploy-pipeline >> /home/ec2-user/nodejs-aws-codedeploy-pipeline/deploy.log
+# echo 'npm install' >> /home/ec2-user/nodejs-aws-codedeploy-pipeline/deploy.log 
+# npm install >> /home/ec2-user/nodejs-aws-codedeploy-pipeline/deploy.log
