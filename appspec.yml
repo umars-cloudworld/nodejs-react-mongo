@@ -2,16 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/nodejs-github-codebuild-codepipeline
+    destination: /home/ec2-user/nodejs-react-mongo
 file_exists_behavior: OVERWRITE
 hooks:
-# ApplicationStop:
-# DownloadBundle:
-#  BeforeInstall:
-#    - location: scripts/before_install.sh
-#      timeout: 300
-#      runas: root
-# Install:
   AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
